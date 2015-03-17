@@ -3,31 +3,31 @@
 <head>
 <script>
 
-var cake = 0;
+var celsius = 0;
 function getWeather() {
 	var ask = prompt("Please enter the temperature in fahrenheit.");
-	var aNumber = parseInt(ask);
-	var something = isNaN(aNumber);
+	var number = parseInt(ask);
+	var something = isNaN(number);
 	var text = "Today you should wear a ";
-	cake = ask;
+	celsius = ask;
 	
 	if (ask <= 10)
 	{
 		document.getElementById("output").innerHTML =
-        text + "heavy coat, snow pants and snow boots.";	
+        text + "A heavy coat, snow pants and snow boots.";	
 		
 	}
 	
 	else if (ask <= 20)
 	{
 		document.getElementById("output").innerHTML =
-        text + "warm sweater, thick jeans, and probably snow boots.";
+        text + "A warm sweater, a pair of thick jeans, and probably some snow boots.";
 			
 	}
 	else if (ask <= 30)
 	{
 		document.getElementById("output").innerHTML =
-        text + "sweater, jacket, jeans, and warm shoes.";
+        text + "A sweater, jacket, jeans, and warm shoes.";
 			
 	}
 	else if (ask <= 40)
@@ -89,9 +89,9 @@ function getWeather() {
 }
 
 function tempC() {
-		var doMath = (cake-32) * (5/9);
+		var convert = (celsius-32) * (5/9);
 		document.getElementById("dop").innerHTML =
-		doMath + " Celsius";
+		convert + " Celsius";
         	
 		
 }
