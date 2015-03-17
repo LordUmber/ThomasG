@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<script>
+
+var cake = 0;
+function getWeather() {
+	var ask = prompt("Please enter the temperature in fahrenheit.");
+	var aNumber = parseInt(ask);
+	var something = isNaN(aNumber);
+	var text = "Today you should wear a ";
+	cake = ask;
+	
+	if (ask <= 10)
+	{
+		document.getElementById("output").innerHTML =
+        text + "heavy coat, snow pants and snow boots.";	
+		
+	}
+	
+	else if (ask <= 20)
+	{
+		document.getElementById("output").innerHTML =
+        text + "warm sweater, thick jeans, and probably snow boots.";
+			
+	}
+	else if (ask <= 30)
+	{
+		document.getElementById("output").innerHTML =
+        text + "sweater, jacket, jeans, and warm shoes.";
+			
+	}
+	else if (ask <= 40)
+	{
+		document.getElementById("output").innerHTML =
+        text + "long sleeve, light jacket, and jeans.";
+			
+	}
+	else if (ask <= 50)
+	{
+		document.getElementById("output").innerHTML =
+        text + "long sleeve, light jacket, and jeans.";
+			
+	}
+	else if (ask <= 60)
+	{
+		document.getElementById("output").innerHTML =
+        text + "long sleeve, light jacket, and yoga pants.";
+			
+	}
+	else if (ask <= 70)
+	{
+		document.getElementById("output").innerHTML =
+        text + "short sleeve, and yoga pants.";
+			
+	}
+	else if (ask <= 80)
+	{
+		document.getElementById("output").innerHTML =
+        text + "short sleeve, and shorts.";
+			
+	}
+	else if (ask <= 90)
+	{
+		document.getElementById("output").innerHTML =
+        text + "tank top, and shorts.";
+			
+	}
+	else if (ask <= 100)
+	{
+		document.getElementById("output").innerHTML =
+        text + "tank top, and shorts.";
+			
+	}
+	else
+	{
+		document.getElementById("output").innerHTML =
+        text + "2 piece";
+			
+	}
+    
+	if (something == true)
+	{
+		document.getElementById("output").innerHTML =
+        "Put in a number";	
+	}
+	
+
+}
+
+function tempC() {
+		var doMath = (cake-32) * (5/9);
+		document.getElementById("dop").innerHTML =
+		doMath + " Celsius";
+        	
+		
+}
+
+</script>
+<meta charset="utf-8">
+<title>title</title>
+</head>
+
+<body>
+<input type="button" value="What Should I Wear?" onClick="getWeather(), tempC()" />
+<p id="output"></p>
+<p id="dop"></p>
+</body>
+</html>
