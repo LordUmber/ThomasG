@@ -8,74 +8,74 @@ function getWeather() {
 	var ask = prompt("Please enter the temperature in fahrenheit.");
 	var number = parseInt(ask);
 	var something = isNaN(number);
-	var text = "Today you should wear a ";
+	var text = "Today would be a good day to wear a ";
 	celsius = ask;
 	
 	if (ask <= 10)
 	{
 		document.getElementById("output").innerHTML =
-        text + "A heavy coat, snow pants and snow boots.";	
+        text + "heavy coat, snow pants and snow boots.";	
 		
 	}
 	
 	else if (ask <= 20)
 	{
 		document.getElementById("output").innerHTML =
-        text + "A warm sweater, a pair of thick jeans, and probably some snow boots.";
+        text + "warm sweater, a pair of thick jeans, and probably some snow boots.";
 			
 	}
 	else if (ask <= 30)
 	{
 		document.getElementById("output").innerHTML =
-        text + "A sweater, jacket, jeans, and warm shoes.";
+        text + "sweater, jacket, jeans, and warm shoes.";
 			
 	}
 	else if (ask <= 40)
 	{
 		document.getElementById("output").innerHTML =
-        text + "long sleeve, light jacket, and jeans.";
+        text + "long-sleeve shirt, light jacket, and jeans.";
 			
 	}
 	else if (ask <= 50)
 	{
 		document.getElementById("output").innerHTML =
-        text + "long sleeve, light jacket, and jeans.";
+        text + "long-sleeve shirt, light jacket, and jeans.";
 			
 	}
 	else if (ask <= 60)
 	{
 		document.getElementById("output").innerHTML =
-        text + "long sleeve, light jacket, and yoga pants.";
+        text + "long-sleeve shirt, light jacket, and yoga pants.";
 			
 	}
 	else if (ask <= 70)
 	{
 		document.getElementById("output").innerHTML =
-        text + "short sleeve, and yoga pants.";
+        text + "short-sleeve shirt, and jeans.";
 			
 	}
 	else if (ask <= 80)
 	{
 		document.getElementById("output").innerHTML =
-        text + "short sleeve, and shorts.";
+        text + "long-sleeve shirt, and jeans.";
 			
 	}
 	else if (ask <= 90)
 	{
 		document.getElementById("output").innerHTML =
-        text + "tank top, and shorts.";
+        text + "long-sleeve shirt, and shorts.";
 			
 	}
 	else if (ask <= 100)
 	{
 		document.getElementById("output").innerHTML =
-        text + "tank top, and shorts.";
+        text + "long-sleeve shirt, and shorts.";
 			
 	}
 	else
 	{
 		document.getElementById("output").innerHTML =
-        text + "2 piece";
+        text + "long-sleeve shirt, and shorts.";
 			
 	}
     
