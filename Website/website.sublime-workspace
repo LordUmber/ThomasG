@@ -1,0 +1,948 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"link",
+				"link	link - icon"
+			],
+			[
+				"Veloci",
+				"VelocityE"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "styles/css/bootstrap.css",
+			"settings":
+			{
+				"buffer_size": 136252,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "//ARIES/Students/2016/thomas.garcia/ThomasG/Website/thanks.php",
+			"settings":
+			{
+				"buffer_size": 3079,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html>\n<head>\n<meta charset=\"utf-8\">\n<title>Home</title>\n\n<!--[if IE]>\n<script src=\"http://html5shiv.googlecode.com/svn/trunk/html5.js\"></script>\n<![endif]-->\n\n\n<!-- Latest compiled and minified CSS -->\n<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->\n<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js\"></script>\n<!-- Latest compiled and minified JavaScript -->\n<script src=\"styles/js/bootstrap.js\"></script>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"styles/css/bootstrap.css\">\n\n<link  rel=\"stylesheet\" type=\"text/css\" href=\"styles/css/stylesheet.css\">\n\n\n\n</head>\n<body>\n<div id=\"wrapper\">\n	<nav class=\"navbar navbar-default navbar-fixed-top\">\n	<!--[if IE]><div style='clear: both; height: 112px; padding:0; position: relative;'><a href=\"http://www.theie7countdown.com/ie-users-info\"><img src=\"http://www.theie7countdown.com/assets/badge_iecountdown.png\" border=\"0\" height=\"112\" width=\"348\" alt=\"\" /></a></div><![endif]-->\n		<div class=\"container-fluid\">\n			<div id=\"navbar\" class=\"navbar-collapse collapse\">\n				<ul class=\"nav navbar-nav\">\n					<li role=\"navigation\"><a href=\"home.html\">Home</a></li>\n					<li role=\"navigation\" class=\"active\"><a href=\"#\">About Me</a></li>\n					<li class=\"dropdown\"><a href=\"#\" data-toggle=\"dropdown\" class=\"dropdown-toggle\">Projects <b class=\"caret\"></b></a>\n						<ul class=\"dropdown-menu\">\n							<li><a href=\"conditions.php\">True or False Conditionals</a></li>\n							<li><a href=\"temperature.html\">Clothing Picker</a></li>\n							<li><a href=\"fileuploader.html\">File Uploader</a></li>\n						</ul>\n						</li>\n					<li role=\"navigation\"><a href=\"contact.php\">Contact Me</a></li>\n				</ul>\n				<ul class=\"nav navbar-nav navbar-right\">\n					<li role=\"navigation\"><a href=\"login.html\">Login</a></li>\n					<li class=\"navbar-text\">Thomas Garcia</li>\n				</ul>\n			</div>\n		</div>\n	</nav>\n	<div id=\"content\">\n		<div class=\"row\">\n			<div class=\"col-md-6\">\n				<h3>What I Like</h3>\n			</div>\n			<div class=\"col-md-6\">\n				<h3>What I Dislike</h3>\n			</div>\n		</div>\n		<div class=\"row\">\n			<div class=\"col-md-6\">\n				<strong>Hobbies:</strong>\n				<br>\n				I enjoy playing games, whether they are in <abbr title=\"XCOM: Enemy Unknown\">digital</abbr> or <abbr title=\"A Ticket to Ride\">physical</abbr> form. \n			</div>\n			<div class=\"col-md-6\">\n				\n			</div>\n		</div>		\n	</div>\n	<div id=\"footer\">\n	Copyright© 2015 Thomas Garcia\n	</div>\n</div>\n</body>\n</html>",
+			"file": "about.html",
+			"file_size": 2518,
+			"file_write_time": 130736763675379549,
+			"settings":
+			{
+				"buffer_size": 2444,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "home.html",
+			"settings":
+			{
+				"buffer_size": 2198,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/css/stylesheet.css",
+			"settings":
+			{
+				"buffer_size": 1613,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "fileuploader.html",
+			"settings":
+			{
+				"buffer_size": 3225,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"About"
+			],
+			[
+				"html5",
+				"Set Syntax: HTML5"
+			],
+			[
+				"css sni",
+				"CSS3: Insert normalize.css"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"css3",
+				"Set Syntax: CSS3"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"package",
+				"Package Control: Enable Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"Snippet: link",
+				"Snippet: link - stylesheet"
+			],
+			[
+				"syntax: cs",
+				"Set Syntax: CSS"
+			],
+			[
+				"synt",
+				"Set Syntax: HTML5"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 464.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os; pr='Preferences.sublime-settings'; ip='ignored_packages'; n='Package Control'; s=sublime.load_settings(pr); ig=s.get(ip); ig.append(n); s.set(ip,ig); sublime.save_settings('Preferences.sublime-settings'); pf=n+'.sublime-package'; urllib.request.install_opener(urllib.request.build_opener(urllib.request.ProxyHandler())); by=urllib.request.urlopen('https://packagecontrol.io/'+pf.replace(' ','%20')).read(); open(os.path.join(sublime.installed_packages_path(),pf),'wb').write(by); ig.remove(n); s.set(ip,ig); sublime.save_settings(pr); print('Package Control: 3.0.0 upgrade successful!')",
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/M/ThomasG/Website/.htaccess",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/register.php",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/passwordreset.php",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/login.php",
+		"/M/ThomasG/Website/temperature.html",
+		"/M/ThomasG/Website/contact.php",
+		"/M/NiceSimpleContactForm2/index.php",
+		"/M/NiceSimpleContactForm2/contactthanks.php",
+		"/M/NiceSimpleContactForm2/contactengine.php",
+		"/M/NiceSimpleContactForm2/example-captcha.php",
+		"/M/NiceSimpleContactForm2/example-mailhide.php",
+		"/M/ThomasG/Objects.html",
+		"/M/ThomasG/Website/fileuploader.html",
+		"/M/ThomasG/Website/styles/css/stylesheet.css",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/temperature.html",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/countdown.html",
+		"/M/Old Files/sophomore/Quarter Three/D&D/Ctrl Alt Create Website/Ctrl Alt Create Contact.html",
+		"/M/Old Files/sophomore/Quarter Three/D&D/Unnamed Site 3/Roller Drome Contact.html",
+		"/M/Old Files/sophomore/Quarter Three/D&D/WordPress/wordpress/wp-content/themes/Contact.html",
+		"/M/Old Files/sophomore/Quarter Three/D&D/WordPress/wordpress/wp-content/themes/contact form PHP.php",
+		"/M/Old Files/sophomore/Quarter Two/D&D/A One Step Away Contact Form.html",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/mail.php",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/contact.html",
+		"//ARIES/Students/2016/thomas.garcia/junior/Junior Project/Website/contact.php",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/conditions.php",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/home.html",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/database.php",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/fileuploader.html",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/functions.php",
+		"//ARIES/Students/2016/thomas.garcia/ThomasG/Website/index.html",
+		"/M/ThomasG/Website/Countdown.html",
+		"/M/ThomasG/Website/Temperature.html",
+		"/M/Websites/PHP/project.php",
+		"/M/ThomasG/Countdown.html",
+		"/M/ThomasG/Temperature.html",
+		"/M/junior/PWD/JS/Temperature.html",
+		"/M/junior/Physics/Quarter Three/Website/index.html",
+		"/M/junior/Physics/Quarter Three/Website/styles/css/bootstrap.css",
+		"/M/junior/Physics/Quarter Three/Website/styles/css/stylesheet.css",
+		"/M/junior/Junior Project/Website/register.php",
+		"/M/junior/PWD/JS/Countdown.html",
+		"/M/junior/PWD/JS/Objects.html",
+		"/C/Users/thomas.garcia/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/thomas.garcia/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/M/junior/Junior Project/Website/B Team - Power output.html",
+		"/M/junior/PWD/Quarter Three/passwordReset(1).php",
+		"/M/junior/PWD/Quarter Three/passwordreset.php",
+		"/M/junior/PWD/Quarter Three/New folder/register.php",
+		"/M/junior/PWD/Quarter Three/New folder/database.php",
+		"/M/junior/PWD/Quarter Three/New folder/login.php",
+		"/M/junior/PWD/Quarter Three/New folder/passwordReset.php",
+		"/M/junior/PWD/Quarter Two/Miscellaneous/Thing One.html",
+		"/M/junior/PWD/Quarter Three/New folder/db1.php",
+		"/M/Websites/Meridian Lanes/meridianLanesCSS.css",
+		"/M/Websites/What to Wear in Different Kinds of Weather/JavaScript.html",
+		"/M/Magic Hexagon.html",
+		"/M/junior/PWD/Quarter One/first_website_pt1/Styles/main.css",
+		"/M/junior/PWD/Quarter One/first_website_pt1/index.html",
+		"/M/Websites/CIW Practical 1-6/CIW practical.html",
+		"/M/Websites/CIW Practical 1-6/CIWPractical.css",
+		"/M/junior/PWD/CIW/Lab_2-4/index.htm",
+		"/M/Websites/Meridian Lanes/home.html",
+		"/M/Test thing/Project Eight/project_eight.html",
+		"/M/Test thing/Project Eight/CSS/projectEight.css",
+		"/M/junior/PWD/Quarter Two/Lesson Six Labs/Lab_6-3.htm",
+		"/M/Websites/Meridian Lanes/Meridian_Lanes_Home.html",
+		"/M/Test thing/Project Seven/CSS/projectSeven.css",
+		"/M/Test thing/Project Seven/project_seven.html",
+		"/M/Test thing/Project Six/CSS/projectSix.css",
+		"/M/Test thing/Project Six/project_six.html",
+		"/M/Test thing/Project Five/CSS/projectFive.css",
+		"/M/Test thing/Project Five/project_five.html",
+		"/M/Test thing/Project Four/CSS/projectFourCSS.css",
+		"/M/Test thing/Project Four/project_four.html",
+		"/M/Test thing/Project Two/project_two.html",
+		"/M/Test thing/Project Two/CSS/projectTwoCSS.css",
+		"/M/Test thing/Project Three/project_three.html",
+		"/M/Test thing/Project Three/CSS/projectThreeCSS.css",
+		"/M/Test thing/Project One/CSS/projectOneCSS.css",
+		"/M/Test thing/Project One/Project One.html",
+		"//ARIES/Students/2016/thomas.garcia/Test thing/Project One/image.jpg",
+		"//ARIES/Students/2016/thomas.garcia/junior/PWD/Quarter One/Lab 4/Lab_4-1/css/habitat.css",
+		"//ARIES/Students/2016/thomas.garcia/junior/PWD/Quarter One/Lab 4/Lab_4-1/index.htm",
+		"/C/Users/thomas.garcia/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"//ARIES/Students/2016/thomas.garcia/junior/PWD/Quarter One/Section 17/favicon.ico",
+		"/M/junior/Physics Tech/Quarter One/Canvas CSS.css",
+		"/M/junior/Physics Tech/Quarter One/Physics Formulas.html",
+		"/M/Websites/Meridian Lanes/Meridian_Lanes_Header.JPG",
+		"/M/Websites/3D Graphics.html",
+		"/M/Websites/3D Graphics CSS.css",
+		"//ARIES/Students/2016/thomas.garcia/junior/PWD/Quarter One/Section 17/basic/css/webkit-only.css",
+		"//ARIES/Students/2016/thomas.garcia/junior/PWD/Quarter One/Section 17/basic/css/full.css"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"#80B3DA",
+			"206396",
+			"margin-left: -15",
+			"get",
+			"presentation",
+			"#4598d7",
+			".dropdown-menu > li > a",
+			".navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open",
+			".navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus",
+			".navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus\\\\",
+			"#n",
+			"hover",
+			"background-color",
+			"background-color: #FFFFFF;",
+			"    background-color: #FFFFFF;",
+			"nav",
+			"cake",
+			"aNumber",
+			"XOR",
+			" color",
+			" color:",
+			"{",
+			"ctrl+shift+p",
+			"auth",
+			"<br />",
+			"\n	",
+			"5px",
+			"es"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "styles/css/bootstrap.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 136252,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26451,
+								26451
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 23598.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "//ARIES/Students/2016/thomas.garcia/ThomasG/Website/thanks.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3079,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2229,
+								2229
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "about.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2444,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1990,
+								1990
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 518.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "home.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2198,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1658,
+								1658
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "styles/css/stylesheet.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "fileuploader.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2037,
+								2037
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 405.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "website.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"M:\\junior\\Junior Project\\Website\\register.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

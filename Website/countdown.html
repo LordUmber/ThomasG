@@ -1,15 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Home</title>
-
-<!--[if IE]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
-
-
-<!-- Latest compiled and minified CSS -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
@@ -18,9 +9,43 @@
 
 <link  rel="stylesheet" type="text/css" href="styles/css/stylesheet.css">
 
+<script>
+var number = [10,9,8,7,6,5,4,3,2,1];
+function countdown(){
+	if(confirm("Do you wish to begin the countdown?") == true) {
+		for (var i = 0; i < number.length; i++) {
+			alert(number[i]);
+		};
+	alert("Lift Off!");	
+	}
+	else {
+		alert("The countdown has been aborted.");
+	}	
+}
+
+function oddN(){
+	var i = 0;
+	while(i < number.length) {
+		if(number[i] % 2 == 0) {
+			i++;
+			continue;
+		}
+		else {
+			alert(number[i]);
+			i++;
+		}
+	}
+}
 
 
+
+
+
+</script>
+<meta charset="utf-8">
+<title>Countdown</title>
 </head>
+
 <body>
 <div id="wrapper">
 	<nav class="navbar navbar-default navbar-fixed-top">
@@ -28,16 +53,17 @@
 		<div class="container-fluid">
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li role="navigation" class="active"><a href="#">Home</a></li>
+					<li role="navigation"><a href="home.html">Home</a></li>
 					<li role="navigation"><a href="about.html">About Me</a></li>
 					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Projects <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="conditions.php">True or False Conditionals</a></li>
 							<li><a href="temperature.html">Clothing Picker</a></li>
+							<li><a href="countdown.html">Countdown</a></li>
 							<li><a href="fileuploader.html">File Uploader</a></li>
 						</ul>
 						</li>
-					<li role="navigation"><a href="contact.php">Contact Me</a></li>
+					<li role="navigation"><a href="contact.html">Contact Me</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li role="navigation"><a href="login.html">Login</a></li>
@@ -46,16 +72,14 @@
 			</div>
 		</div>
 	</nav>
-	<div id="content">
-		<h2 class="center">Thomas Garcia</h2>
-
-		<p>
-		Hello, and welcome to my website. Here, I host some of my projects, and two pages, one about me, and another if any visitors would like to contact me.
-		</p>
-	</div>
-	<div id="footer">
-	Copyright© 2015 Thomas Garcia
-	</div>
+<div id="content">
+<input type="button" value="Countdown" onClick="countdown()" />
+<br>
+<input type="button" value="Countdown In Odd Numbers" onClick="oddN()" />
+</div>
+<div id="footer">
+Copyright© 2015 Thomas Garcia
+</div>
 </div>
 </body>
 </html>
