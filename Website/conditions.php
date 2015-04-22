@@ -189,7 +189,6 @@ if (isset ($_POST['submitAll']))	{
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li role="navigation"><a href="home.html">Home</a></li>
-					<li role="navigation"><a href="about.html">About Me</a></li>
 					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Projects <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="conditions.php">True or False Conditionals</a></li>
@@ -198,7 +197,7 @@ if (isset ($_POST['submitAll']))	{
 							<li><a href="fileuploader.html">File Uploader</a></li>
 						</ul>
 						</li>
-					<li role="navigation"><a href="contact.html">Contact Me</a></li>
+					<li role="navigation"><a href="contact.php">Contact Me</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li role="navigation"><a href="login.html">Login</a></li>

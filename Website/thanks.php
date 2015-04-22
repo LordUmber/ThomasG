@@ -1,4 +1,3 @@
-
 <?php
     $to = "lordumber4@gmail.com";
     $subject = "Contact Message from Portfolio Site:" . $_REQUEST['subject'];
@@ -33,7 +32,6 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li role="navigation"><a href="home.html">Home</a></li>
-                    <li role="navigation"><a href="about.html">About Me</a></li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Projects <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="conditions.php">True or False Conditionals</a></li>

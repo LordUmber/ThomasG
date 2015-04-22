@@ -1,5 +1,4 @@
 <?php
-$page_title = 'First User Login Form';
 
 if (isset($_POST['submit'])) // We are checking for form submission
 	{  
@@ -55,7 +54,7 @@ if (isset($_POST['submit'])) // We are checking for form submission
 <script src="styles/js/bootstrap.js"></script>
 
 <link href="styles/css/stylesheet.css" rel="stylesheet" type="text/css">
-<title>Register</title>
+<title>Login</title>
 </head>
 <body>
 <div id="wrapper">
@@ -84,8 +83,7 @@ if (isset($_POST['submit'])) // We are checking for form submission
 		</div>
 	</nav>
 
-<title><?php echo $page_title; ?></title>
-
+<div id="content">
 <form action = "login.php" method="post">
 Username: <br>
 <input type="text" name="username" />
@@ -97,6 +95,7 @@ Password: <br>
 </form>
 
 <a href="register.php">Register here</a>
+</div>
 <div id="footer">
 	Copyright© 2015 Thomas Garcia
 </div>

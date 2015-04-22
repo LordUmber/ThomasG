@@ -190,35 +190,124 @@ $email = trim(stripslashes(filter_var($email, FILTER_SANITIZE_EMAIL)));
 			</div>
 		</div>
 	</nav>
+<div id="content">
 <h2>Register</h2>
-	<form action="register.php" method="post">
-		Username: <br> <input type="text" name="username" value = "<?php if (isset($username)) { echo $username; } ?>"/>
-		<br>
-		Password: <br> <input type="password" name="password" value = "<?php if (isset($password)) { echo $password; } ?>"/>
-		<br>
-		Repeat Password: <br> <input type="password" name="password2" />
-		<br>
-		Email: <br> <input type="text" name="email" value = "<?php if (isset($email)) { echo $email; } ?>"/>
-		<br>
-		Repeat Email: <br><input type="text" name="email2" />
-		<br>
-		First Name: <br> <input type="text" name="fname" value = "<?php if (isset($fname)) { echo $fname; } ?>"/>
-		<br>
-		Last Name: <br> <input type="text" name="lname" value = "<?php if (isset($lname)) { echo $lname; } ?>" />
-		<br>
-		Address: <br> <input type="text" name="address1" value = "<?php if (isset($address1)) { echo $address1; } ?>" />
-		<br>
-		Address 2: <br> <input type="text" name="address2" value = "<?php if (isset($address2)) { echo $address2; } ?>" />
-		<br>
-		City: <br> <input type="text" name="city" value = "<?php if (isset($city)) { echo $city; } ?>" />
-		<br>
-		State: <br> <input type="text" name="state" value = "<?php if (isset($state)) { echo $state; } ?>" />
-		<br>
-		Phone: <br> <input type="text" name="phone" value = "<?php if (isset($phone)) { echo $phone; } ?>" />
-		<br>
-
-		<input type="submit" name="submit" value="Submit" />
-	</form>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="well well-sm" id="innerForm">
+					<form action="register.php" method="post">
+					<h3>Login Details</h3>
+					<hr>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="username">Username
+									</label>
+									<input type="text" class="form-control register-form" name="username" 
+									value="<?php if (isset($username)) { echo $username; } ?>"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="password">Password
+									</label>
+									<input type="text" class="form-control register-form" name="password" 
+									value="<?php if (isset($password)) { echo $password; } ?>"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="password2">Confirm Password
+								</label>
+								<input type="text" class="form-control register-form" name="password2" 
+								value="<?php if (isset($password2)) { echo $password2; } ?>"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="email">Email
+									</label>
+									<input type="text" class="form-control register-form" name="email" 
+									value="<?php if (isset($email)) { echo $email; } ?>"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="email2">Confirm Email
+								</label>
+								<input type="text" class="form-control register-form" name="email2" 
+								value="<?php if (isset($email2)) { echo $email2; } ?>"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="fname">First Name
+									</label>
+									<input type="text" class="form-control register-form" name="fname" 
+									value="<?php if (isset($fname)) { echo $fname; } ?>"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="lname">Last Name
+								</label>
+								<input type="text" class="form-control register-form" name="lname" 
+								value="<?php if (isset($lname)) { echo $lname; } ?>"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="address1">Address 1
+									</label>
+									<input type="text" class="form-control register-form" name="address1" 
+									value="<?php if (isset($address1)) { echo $address1; } ?>"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="address2">Address 2
+								</label>
+								<input type="text" class="form-control register-form" name="address2" 
+								value="<?php if (isset($address2)) { echo $address2; } ?>"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="city">City
+									</label>
+									<input type="text" class="form-control register-form" name="city" 
+									value="<?php if (isset($city)) { echo $city; } ?>"/>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<label for="address2">State
+								</label>
+								<input type="text" class="form-control register-form" name="state" 
+								value="<?php if (isset($state)) { echo $state; } ?>"/>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="phone" class="Center">Phone Number
+									</label>
+									<input type="text" class="form-control register-form" name="phone" 
+									value="<?php if (isset($phone)) { echo $phone; } ?>"/>
+								</div>
+							</div>
+						</div>				
+						<input type="submit" name="submit" value="Submit" />
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div id="footer">
 	Copyright© 2015 Thomas Garcia
 </div>

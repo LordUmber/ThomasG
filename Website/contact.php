@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Contact Us</title>
+<title>Contact Me</title>
 
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,7 +25,6 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li role="navigation"><a href="home.html">Home</a></li>
-                    <li role="navigation"><a href="about.html">About Me</a></li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Projects <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="conditions.php">True or False Conditionals</a></li>
@@ -34,7 +33,7 @@
                             <li><a href="fileuploader.html">File Uploader</a></li>
                         </ul>
                         </li>
-                    <li role="navigation" class="active"><a href="contact.php">Contact Me</a></li>
+                    <li role="navigation" class="active"><a href="#">Contact Me</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li role="navigation"><a href="login.html">Login</a></li>
@@ -44,8 +43,6 @@
         </div>
     </nav>
 <div id="content">
-<!--[if IE]><div style='clear: both; height: 112px; padding:0; position: relative;'><a href="http://www.theie7countdown.com/ie-users-info"><img src="http://www.theie7countdown.com/assets/badge_iecountdown.png" border="0" height="112" width="348" alt="" /></a></div><![endif]-->
-
 <div class="jumbotron jumbotron-sm" id="outerForm">
 <div class="container">
     <div class="row">

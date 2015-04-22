@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Home</title>
+<title>404 Error</title>
 
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -28,8 +28,7 @@
 		<div class="container-fluid">
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li role="navigation"><a href="home.html">Home</a></li>
-					<li role="navigation" class="active"><a href="#">About Me</a></li>
+					<li role="navigation" class="active"><a href="home.html">Home</a></li>
 					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Projects <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="conditions.php">True or False Conditionals</a></li>
@@ -47,24 +46,8 @@
 		</div>
 	</nav>
 	<div id="content">
-		<div class="row">
-			<div class="col-md-6">
-				<h3>What I Like</h3>
-			</div>
-			<div class="col-md-6">
-				<h3>What I Dislike</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<strong>Hobbies:</strong>
-				<br>
-				I enjoy playing games, whether they are in <abbr title="XCOM: Enemy Unknown">digital</abbr> or <abbr title="A Ticket to Ride">physical</abbr> form. 
-			</div>
-			<div class="col-md-6">
-				
-			</div>
-		</div>		
+		oh, looks like you found a bad link. <?php mail("lordumber4@gmail.com", "Broken URL: " . echo var="REQUEST_URI" . "on " . echo var="HTTP_REFERER",
+"someone found a broken URL in " . echo var="HTTP_REFERER"  ". The broken URL was " . echo var="REQUEST_URI" );	?>
 	</div>
 	<div id="footer">
 	Copyright© 2015 Thomas Garcia
