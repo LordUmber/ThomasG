@@ -19,24 +19,23 @@
 </head>
 <body>
 <div id="wrapper">
-        <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top">
     <!--[if IE]><div style='clear: both; height: 112px; padding:0; position: relative;'><a href="http://www.theie7countdown.com/ie-users-info"><img src="http://www.theie7countdown.com/assets/badge_iecountdown.png" border="0" height="112" width="348" alt="" /></a></div><![endif]-->
         <div class="container-fluid">
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li role="navigation"><a href="home.html">Home</a></li>
+                    <li role="navigation" class="active"><a href="home.html">Home</a></li>
                     <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Projects <b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <li><a href="conditions.php">True or False Conditionals</a></li>
                             <li><a href="temperature.html">Clothing Picker</a></li>
                             <li><a href="countdown.html">Countdown</a></li>
-                            <li><a href="fileuploader.html">File Uploader</a></li>
                         </ul>
                         </li>
-                    <li role="navigation" class="active"><a href="#">Contact Me</a></li>
+                    <li role="navigation"><a href="contact.php">Contact Me</a></li>
+                    <li role="navigation"><a href="https://github.com/LordUmber/ThomasG.git">My GitHub</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li role="navigation"><a href="login.html">Login</a></li>
+                    <li role="navigation"><a href="login.php">Login</a></li>
                     <li class="navbar-text">Thomas Garcia</li>
                 </ul>
             </div>

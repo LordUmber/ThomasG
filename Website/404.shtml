@@ -31,15 +31,15 @@
 					<li role="navigation" class="active"><a href="home.html">Home</a></li>
 					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Projects <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="conditions.php">True or False Conditionals</a></li>
 							<li><a href="temperature.html">Clothing Picker</a></li>
-							<li><a href="fileuploader.html">File Uploader</a></li>
+							<li><a href="countdown.html">Countdown</a></li>
 						</ul>
 						</li>
 					<li role="navigation"><a href="contact.php">Contact Me</a></li>
+					<li role="navigation"><a href="https://github.com/LordUmber/ThomasG.git">My GitHub</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li role="navigation"><a href="login.html">Login</a></li>
+					<li role="navigation"><a href="login.php">Login</a></li>
 					<li class="navbar-text">Thomas Garcia</li>
 				</ul>
 			</div>
