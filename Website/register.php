@@ -202,7 +202,7 @@ $email = trim(stripslashes(filter_var($email, FILTER_SANITIZE_EMAIL)));
 								<div class="form-group">
 									<label for="username">Username
 									</label>
-									<input type="text" class="form-control register-form" name="username" 
+									<input type="text" class="form-control register-form" name="username" required="required"
 									value="<?php if (isset($username)) { echo $username; } ?>"/>
 								</div>
 							</div>
@@ -214,14 +214,14 @@ $email = trim(stripslashes(filter_var($email, FILTER_SANITIZE_EMAIL)));
 								<div class="form-group">
 									<label for="password">Password
 									</label>
-									<input type="text" class="form-control register-form" name="password" 
+									<input type="text" class="form-control register-form" name="password" required="required"
 									value="<?php if (isset($password)) { echo $password; } ?>"/>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<label for="password2">Confirm Password
 								</label>
-								<input type="text" class="form-control register-form" name="password2" 
+								<input type="text" class="form-control register-form" name="password2" required="required"
 								value="<?php if (isset($password2)) { echo $password2; } ?>"/>
 							</div>
 						</div>
@@ -230,14 +230,14 @@ $email = trim(stripslashes(filter_var($email, FILTER_SANITIZE_EMAIL)));
 								<div class="form-group">
 									<label for="email">Email
 									</label>
-									<input type="text" class="form-control register-form" name="email" 
+									<input type="text" class="form-control register-form" name="email" required="required"
 									value="<?php if (isset($email)) { echo $email; } ?>"/>
 								</div>
 							</div>
 							<div class="col-md-6">
 								<label for="email2">Confirm Email
 								</label>
-								<input type="text" class="form-control register-form" name="email2" 
+								<input type="text" class="form-control register-form" name="email2" required="required"
 								value="<?php if (isset($email2)) { echo $email2; } ?>"/>
 							</div>
 						</div>
@@ -299,7 +299,7 @@ $email = trim(stripslashes(filter_var($email, FILTER_SANITIZE_EMAIL)));
 								</div>
 							</div>
 						</div>				
-						<input type="submit" name="submit" value="Submit" />
+						<input type="submit" name="submit" value="submit" />
 					</form>
 				</div>
 			</div>

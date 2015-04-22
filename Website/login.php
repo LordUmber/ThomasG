@@ -83,13 +83,24 @@ if (isset($_POST['submit'])) // We are checking for form submission
 
 <div id="content">
 <form action = "login.php" method="post">
-Username: <br>
-<input type="text" name="username" />
+<div class="row">
+	<div class="col-md-12">
+		<label for="username">Username
+		</label>
+		<input type="text" class="form-control" name="username" required="required"
+		value="<?php if (isset($username)) { echo $username; } ?>"/>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<label for="password">Password
+		</label>
+	<input type="text" class="form-control" name="password" required="required"
+	value="<?php if (isset($password)) { echo $password; } ?>"/>
+	</div>
+</div>
 <br>
-Password: <br>
-<input type="password" name="password" />
-<br>
-<input type = "submit" name="submit" value="Login" />
+<input type = "submit" name="submit" value="submit" />
 </form>
 
 <a href="register.php">Register here</a>
