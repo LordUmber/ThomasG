@@ -63,7 +63,7 @@ if (isset($_POST['submit'])) // We are checking for form submission
 		<div class="container-fluid">
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li role="navigation" class="active"><a href="home.html">Home</a></li>
+					<li role="navigation"><a href="home.html">Home</a></li>
 					<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Projects <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="temperature.html">Clothing Picker</a></li>
@@ -74,7 +74,7 @@ if (isset($_POST['submit'])) // We are checking for form submission
 					<li role="navigation"><a href="https://github.com/LordUmber/ThomasG.git">My GitHub</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li role="navigation"><a href="login.php">Login</a></li>
+					<li role="navigation"><a href="login.php" class="active">Login</a></li>
 					<li class="navbar-text">Thomas Garcia</li>
 				</ul>
 			</div>

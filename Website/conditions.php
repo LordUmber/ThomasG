@@ -43,14 +43,14 @@ if (isset ($_POST['submitAll']))	{
 	$xor2 = $_POST['xor2'];
 
 	
-	if (empty($equalTo) || empty($equalTo)) {
+	if (empty($equalTo) || empty($equalTo2)) {
 		$equalToLabel = "One or both of the values are undefined";
 	}
 	else if ($equalTo == $equalTo2) {
 		$equalToLabel = $equalTo . " is equal to " . $equalTo2;
 	}
-	else if ($equalTo == $equalTo2) {
-		$equalToLabel = $equalTo . "is equal to " . $equalTo2;
+	else {
+		$equalToLabel = $equalTo . " is not equal to " . $equalTo2;
 	}
 	
 
@@ -208,225 +208,248 @@ if (isset ($_POST['submitAll']))	{
 <div id="content">
 <h2>Comparative and Logical Operators</h2>
 	<form action="conditions.php" method="post">
-		
-		
-		is equal to conditional: 
-		<br>
-		<input type="text" name="equalTo" value = "<?php if (isset($equalTo)) { echo $equalTo; } ?>"/> 
-		<br> 
-		== 
-		<br>
-		<input type="text" name="equalTo2" value = "<?php if (isset($equalTo2)) { echo $equalTo2; } ?>"/>
-		<br>
-		<label for="isEqualTo" /> <?php if (isset($equalToLabel)) { echo $equalToLabel; } ?></label>
-		
-		<br>
-		<br>
-		
-		
-		is not equal to conditional: 
-		<br>
-		<input type="text" name="notEqual" value = "<?php if (isset($notEqual)) { echo $notEqual; } ?>"/> 
-		<br>
-		!= 
-		<br>
-		<input type="text" name="notEqual2" value = "<?php if (isset($notEqual2)) { echo $notEqual2; } ?>"/>
-		<br>
-		<label for="notEqualTo" /> <?php if (isset($notEqualToLabel)) { echo $notEqualToLabel; } ?></label>
-
-		 
-		<br>
-		<br>
-		
-		
-		less than conditional: 
-		<br>
-		<input type="text" name="lessThan" value = "<?php if (isset($lessThan)) { echo $lessThan; } ?>"/> <br>
-		< 
-		<br>
-		<input type="text" name="lessThan2" value = "<?php if (isset($lessThan2)) { echo $lessThan2; } ?>"/>
-		<br>
-		<label for="lessThan" /> <?php if (isset($lessThanLabel)) { echo $lessThanLabel; } ?></label>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12">
+				<label for="equalTo">is equal to conditional: 
+				</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<input type="text" name="equalTo" class="form-control" value = "<?php if (isset($equalTo)) { echo $equalTo; } ?>"/> 
+				</div>
+				<div class="col-md-2 text-center">
+					==			
+				</div>
+				<div class="col-md-6">
+					<input type="text" name="equalTo2" class="form-control" value="<?php if (isset($equalTo2)) { echo $equalTo2; } ?>"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<label for="equalTo"> <?php if (isset($equalToLabel)) { echo $equalToLabel; } ?></label>
+				</div>
+			</div>
 
 
-		<br>
-		<br>
-		
-		
-		greater than conditional: 
-		<br>
-		<input type="text" name="greaterThan" value = "<?php if (isset($greaterThan)) { echo $greaterThan; } ?>"/> 
-		<br>
-		>
-		<br>
-		<input type="text" name="greaterThan2" value = "<?php if (isset($greaterThan2)) { echo $greaterThan2; } ?>"/>
-		<br>
-		<label for="greaterThan" /> <?php if (isset($greaterThanLabel)) { echo $greaterThanLabel; } ?></label>
+			<div class="row">
+				<div class="col-md-12">
+				<label for="notEqual">is not equal to conditional: 
+				</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<input type="text" name="notEqual" class="form-control" value="<?php if (isset($notEqual)) { echo $notEqual; } ?>"/> 
+				</div>
+				<div class="col-md-2 text-center">
+					!=			
+				</div>
+				<div class="col-md-6">
+					<input type="text" name="notEqual2" class="form-control" value="<?php if (isset($notEqual2)) { echo $notEqual2; } ?>"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<label for="notEqual"> <?php if (isset($notEqualToLabel)) { echo $notEqualToLabel; } ?></label>
+				</div>
+			</div>
 
-		
-		<br>
-		<br>
-		
-		
-		greater than or equal to conditional:
-		<br>
-		<input type="text" name="greaterThanOrEqualTo" value = "<?php if (isset($greaterThanOrEqualTo)) { echo $greaterThanOrEqualTo; } ?>"/> 
-		<br>
-		>=
-		<br>
-		<input type="text" name="greaterThanOrEqualTo2" value = "<?php if (isset($greaterThanOrEqualTo2)) { echo $greaterThanOrEqualTo2; } ?>"/>
-		<br>
-		<label for="greaterThanOrEqualTo" /> <?php if (isset($greaterThanOrEqualToLabel)) { echo $greaterThanOrEqualToLabel; } ?></label>
-
-		
-		<br>
-		<br>
-		
-		
-		less than or equal to conditional: 
-		<br>
-		<input type="text" name="lessThanOrEqualTo" value = "<?php if (isset($lessThanOrEqualTo)) { echo $lessThanOrEqualTo; } ?>"/> <br>
-		<=
-		<br>
-		<input type="text" name="lessThanOrEqualTo2" value = "<?php if (isset($lessThanOrEqualTo2)) { echo $lessThanOrEqualTo2; } ?>"/>
-		<br>
-		<label for="lessThanOrEqualTo" /> <?php if (isset($lessThanOrEqualToLabel)) { echo $lessThanOrEqualToLabel; } ?></label>
-		
-
-		<br>
-		<br>
-		
-		
-		not logical operator: 
-		<br>
-		<select name="notSign" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>		
-		<br>
-		! 
-		<br>
-		<label for="notSign" /> <?php if (isset($notSignLabel)) { echo $notSignLabel; } ?></label>
-		<?php echo $notSign; ?>
-
-		<br>
-		<br>
-		
-		
-		and logical operator: 
-		<br>
-		<select name="andSign" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>
-		<br>
-		&&
-		<br>
-		<select name="andSign2" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>		
-		<br>
-		<label for="andSign" /> <?php if (isset($andSignLabel)) { echo $andSignLabel; } ?></label>
-		
-
-		<br>
-		<br>
-		
-		
-		and logical operator: 
-		<br>
-		<select name="and" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>
-		<br>
-		AND
-		<br>
-		<select name="and2" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>		
-		<br>
-		<label for="and" /> <?php if (isset($andLabel)) { echo $andLabel; } ?></label>
-	
-
-		<br>
-		<br>
-	
-	
-		or logical operator: 
-		<br>
-		<select name="orSign" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>
-		<br>
-		||
-		<br>
-		<select name="orSign2" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>
-		<br>
-		<label for="orSign" /> <?php if (isset($orSignLabel)) { echo $orSignLabel; } ?></label>
+			 
+			<br>
+			<br>
+			
+			
+			less than conditional: 
+			<br>
+			<input type="text" name="lessThan" value = "<?php if (isset($lessThan)) { echo $lessThan; } ?>"/> <br>
+			< 
+			<br>
+			<input type="text" name="lessThan2" value = "<?php if (isset($lessThan2)) { echo $lessThan2; } ?>"/>
+			<br>
+			<label for="lessThan" /> <?php if (isset($lessThanLabel)) { echo $lessThanLabel; } ?></label>
 
 
-		<br>
-		<br>
-		
-		
-		or logical operator: 
-		<br>
-		<select name="or" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>
-		<br>
-		OR
-		<br>
-		<select name="or2" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>
-		<br>
-		<label for="or" /> <?php if (isset($orLabel)) { echo $orLabel; } ?></label>
-		
-		<br>
-		<br>
-		
-		
-		and not logical operator: 
-		<br>
-		<select name="xor" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>
-		<br>
-		XOR
-		<br>
-		<select name="xor2" class="form-control">
-		  <option value="-select-">-select-</option>
-		  <option value="TRUE">TRUE</option>
-		  <option value="FALSE">FALSE</option>
-		</select>
-		<br>
-		<label for="xor" /> <?php if (isset($xorLabel)) { echo $xorLabel; } ?></label>
-		
-		<br>
-		<br>
+			<br>
+			<br>
+			
+			
+			greater than conditional: 
+			<br>
+			<input type="text" name="greaterThan" value = "<?php if (isset($greaterThan)) { echo $greaterThan; } ?>"/> 
+			<br>
+			>
+			<br>
+			<input type="text" name="greaterThan2" value = "<?php if (isset($greaterThan2)) { echo $greaterThan2; } ?>"/>
+			<br>
+			<label for="greaterThan" /> <?php if (isset($greaterThanLabel)) { echo $greaterThanLabel; } ?></label>
 
-		<input type="submit" name="submitAll" value="Submit All" />
+			
+			<br>
+			<br>
+			
+			
+			greater than or equal to conditional:
+			<br>
+			<input type="text" name="greaterThanOrEqualTo" value = "<?php if (isset($greaterThanOrEqualTo)) { echo $greaterThanOrEqualTo; } ?>"/> 
+			<br>
+			>=
+			<br>
+			<input type="text" name="greaterThanOrEqualTo2" value = "<?php if (isset($greaterThanOrEqualTo2)) { echo $greaterThanOrEqualTo2; } ?>"/>
+			<br>
+			<label for="greaterThanOrEqualTo" /> <?php if (isset($greaterThanOrEqualToLabel)) { echo $greaterThanOrEqualToLabel; } ?></label>
+
+			
+			<br>
+			<br>
+			
+			
+			less than or equal to conditional: 
+			<br>
+			<input type="text" name="lessThanOrEqualTo" value = "<?php if (isset($lessThanOrEqualTo)) { echo $lessThanOrEqualTo; } ?>"/> <br>
+			<=
+			<br>
+			<input type="text" name="lessThanOrEqualTo2" value = "<?php if (isset($lessThanOrEqualTo2)) { echo $lessThanOrEqualTo2; } ?>"/>
+			<br>
+			<label for="lessThanOrEqualTo" /> <?php if (isset($lessThanOrEqualToLabel)) { echo $lessThanOrEqualToLabel; } ?></label>
+			
+
+			<br>
+			<br>
+			
+			
+			not logical operator: 
+			<br>
+			<select name="notSign" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>		
+			<br>
+			! 
+			<br>
+			<label for="notSign" /> <?php if (isset($notSignLabel)) { echo $notSignLabel; } ?></label>
+			<?php echo $notSign; ?>
+
+			<br>
+			<br>
+			
+			
+			and logical operator: 
+			<br>
+			<select name="andSign" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>
+			<br>
+			&&
+			<br>
+			<select name="andSign2" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>		
+			<br>
+			<label for="andSign" /> <?php if (isset($andSignLabel)) { echo $andSignLabel; } ?></label>
+			
+
+			<br>
+			<br>
+			
+			
+			and logical operator: 
+			<br>
+			<select name="and" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>
+			<br>
+			AND
+			<br>
+			<select name="and2" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>		
+			<br>
+			<label for="and" /> <?php if (isset($andLabel)) { echo $andLabel; } ?></label>
+		
+
+			<br>
+			<br>
+		
+		
+			or logical operator: 
+			<br>
+			<select name="orSign" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>
+			<br>
+			||
+			<br>
+			<select name="orSign2" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>
+			<br>
+			<label for="orSign" /> <?php if (isset($orSignLabel)) { echo $orSignLabel; } ?></label>
+
+
+			<br>
+			<br>
+			
+			
+			or logical operator: 
+			<br>
+			<select name="or" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>
+			<br>
+			OR
+			<br>
+			<select name="or2" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>
+			<br>
+			<label for="or" /> <?php if (isset($orLabel)) { echo $orLabel; } ?></label>
+			
+			<br>
+			<br>
+			
+			
+			and not logical operator: 
+			<br>
+			<select name="xor" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>
+			<br>
+			XOR
+			<br>
+			<select name="xor2" class="form-control">
+			  <option value="-select-">-select-</option>
+			  <option value="TRUE">TRUE</option>
+			  <option value="FALSE">FALSE</option>
+			</select>
+			<br>
+			<label for="xor" /> <?php if (isset($xorLabel)) { echo $xorLabel; } ?></label>
+			
+			<br>
+			<br>
+
+			<input type="submit" name="submitAll" value="Submit All" />
+		</div>
 	</form>
 	</div>
 <div id="footer">
