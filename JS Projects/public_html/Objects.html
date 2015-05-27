@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p id="details"></p>
+<p id="cool"></p>
+<script>
+	
+	
+	
+	var car = {color:"Blue" , model:"Space Car" , wheel:"Funky" , id:"5165" , stuff:"Comes with Space Dinosaur",
+		productDetails: function(c) {
+			return this.color + ", " + this.model + ", " + this.id;
+		} ,
+		
+		coolDetail : function(c) {
+			return this.wheel + ", " + this.stuff;	
+		}
+	};
+
+
+
+
+	document.getElementById("details").innerHTML = car.productDetails();
+	document.getElementById("cool").innerHTML = car.coolDetail();
+</script>
+</body>
+</html>
