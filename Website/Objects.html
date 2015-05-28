@@ -9,27 +9,7 @@
 
 <link  rel="stylesheet" type="text/css" href="styles/css/stylesheet.css">
 
-<script>
-	
-	
-	
-	var car = {color:"Black", model:"Bugatti", wheel:"Exotic", id:"5165", 
-	   speed: "Really fast.",
-		productDetails: function(c) {
-			return this.color + ", " + this.model + ", " + this.id;
-		} ,
-		
-		details: function(c) {
-			return this.wheel + ", " + this.speed;	
-		}
-	};
 
-
-
-
-	document.getElementById("details").innerHTML = car.productDetails();
-	document.getElementById("speed").innerHTML = car.speed();
-</script>
 <meta charset="utf-8">
 <title>Countdown</title>
 </head>
@@ -61,7 +41,7 @@
 <div id="content">
 
 <p id="details"></p>
-<p id="speed"></p>
+<p id="mph"></p>
 
 </div>
 <div id="footer">
@@ -69,4 +49,27 @@ Copyright© 2015 Thomas Garcia
 </div>
 </div>
 </body>
+<script>
+	
+	
+	
+	var car = {
+	    color:"Black", model:"Bugatti", wheel:"Exotic", id:"5165", 
+	    speed: "245 mph",
+		productDetails: function(c) {
+		    return "Color: " + this.color + "<br> Model: " + this.model
+		    + "<br> ID: " + this.id;
+		} ,
+		
+		mph: function(c) {
+		    return "Top Speed in mph: " + this.speed;	
+		}
+	};
+
+
+
+
+	document.getElementById("details").innerHTML = car.productDetails();
+	document.getElementById("mph").innerHTML = car.mph();
+</script>
 </html>

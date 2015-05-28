@@ -41,7 +41,7 @@ if (isset($_POST['submit'])) {  // We are checking for form submission
 		$result = mysql_query($query) or trigger_error("Query MySQL Error: " . mysql_error());
 		
 		if (mysql_affected_rows() == 1) {
-					echo "Your password has been updated, click <a href="http://thomasg.smtchs.org/php/login.php"> here </a> to login.";
+		    echo "Your password has been updated, click <a href='http://thomasg.smtchs.org/php/login.php'> here </a> to login.";
 		}
 	}
 }
