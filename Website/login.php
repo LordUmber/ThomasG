@@ -51,7 +51,6 @@ if (isset($_POST['submit'])) // We are checking for form submission
    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="styles/js/bootstrap.js"></script>
 
 <link href="styles/css/stylesheet.css" rel="stylesheet" type="text/css">
 <title>Login</title>
@@ -109,3 +108,7 @@ if (isset($_POST['submit'])) // We are checking for form submission
 	Copyright© 2015 Thomas Garcia
 </div>
 </div>
+</body>
+</html>
+
+<script src="styles/js/bootstrap.js"></script>

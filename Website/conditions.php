@@ -44,7 +44,12 @@ if (isset ($_POST['submitAll']))	{
 
 	
 	if (empty($equalTo) || empty($equalTo2)) {
-		$equalToLabel = "One or both of the values are undefined";
+		if(empty($equalTo)) {
+			$equalToLabel = "The first value is undefined.";
+		}
+		else {
+			$equalToLabel = "The second value is undefined.";
+		}
 	}
 	else if ($equalTo == $equalTo2) {
 		$equalToLabel = $equalTo . " is equal to " . $equalTo2;
@@ -54,19 +59,29 @@ if (isset ($_POST['submitAll']))	{
 	}
 	
 
-	if ($notEqual != $notEqual2) {
+	if(empty($notEqual) || empty($notEqual2)) {
+		if (empty($notEqual)) {
+			$notEqualToLabel = "The first value is undefined.";
+		}
+		else {
+			$notEqualToLabel = "The second value is undefined.";
+		}
+	}
+	else if ($notEqual != $notEqual2) {
 		$notEqualToLabel = $notEqual . " is not equal to " . $notEqual2;
 	}
-	else if (empty($notEqual) || empty($notEqual2)) {
-		$notEqualToLabel = "One or both of the values are undefined";
-	}
-	else if ($notEqual == $notEqual2) {
+	else {
 		$notEqualToLabel = $notEqual . "is equal to " . $notEqual2;
 	}
 	
 
 	if (empty($lessThan) || empty($lessThan2)) {
-		$lessThanLabel = "One or both of the values are undefined";
+		if (empty($lessThan)) {
+			$lessThanLabel = "The first value is undefined.";
+		}
+		else {
+			$lessThanLabel = "The second value is undefined.";
+		}
 	}
 	else if ($lessThan < $lessThan2) {
 		$lessThanLabel = $lessThan . " is less than " . $lessThan2;
@@ -76,23 +91,45 @@ if (isset ($_POST['submitAll']))	{
 	}
 
 
-	if ($greaterThan > $greaterThan2) {
+	if (empty($greaterThan) || empty($greaterThan2)) {
+		if (empty($greaterThan)) {
+			$greaterThanLabel = "The first value is undefined.";
+		}
+		else {
+			$greaterThanLabel = "The second value is undefined.";
+		}
+	}
+	else if ($greaterThan > $greaterThan2) {
 		$greaterThanLabel = $greaterThan . " is greater than " . $greaterThan2;
 	}
 	else {
 		$greaterThanLabel = $greaterThan . " is not greater than " . $greaterThan2;
 	}
 
-
-	if ($greaterThanOrEqualTo >= $greaterThanOrEqualTo2) {
+	if (empty($greaterThanOrEqualTo) || empty($greaterThanOrEqualTo2)) {
+		if (empty($greaterThanOrEqualTo)) {
+			$greaterThanOrEqualToLabel = "The first value is undefined.";
+		}
+		else {
+			$greaterThanOrEqualToLabel = "The second value is undefined.";
+		}
+	}
+	else if ($greaterThanOrEqualTo >= $greaterThanOrEqualTo2) {
 		$greaterThanLabel = $greaterThanOrEqualTo . " is greater than or equal to " . $greaterThanOrEqualTo2;
 	}
 	else {
 		$greaterThanOrEqualToLabel = $greaterThanOrEqualTo . " is not greater than or equal to " . $greaterThanOrEqualTo2;
 	}
 
-
-	if ($lessThanOrEqualTo <= $lessThanOrEqualTo2) {
+	if (empty($lessThanOrEqualTo) || empty($lessThanOrEqualTo2)) {
+		if (empty($lessThanOrEqualTo)) {
+			$lessThanOrEqualToLabel = "The first value is undefined.";
+		}
+		else {
+			$lessThanOrEqualToLabel = "The second value is undefined.";
+		}
+	}
+	else if ($lessThanOrEqualTo <= $lessThanOrEqualTo2) {
 		$lessThanOrEqualToLabel = $lessThanOrEqualTo . " is less than or equal to " . $lessThanOrEqualTo2;
 	}
 	else {
@@ -101,66 +138,91 @@ if (isset ($_POST['submitAll']))	{
 
 	
 	if ($notSign === "-select-") {
-		$notSignLabel = "Variable is undefined";
+		$notSignLabel = "Variable is undefined.";
 	}
 	else if ($notSign !== "TRUE") {
-		$notSignLabel = "if a variable is false, and evaluated by a NOT logical operator, it must be true";
+		$notSignLabel = "if a variable is false, and evaluated by a NOT logical operator, it must be true.";
 	}
 	else {
-		$notSignLabel = "if a variable is true, and evaluated by a NOT logical operator, it must be false";
+		$notSignLabel = "if a variable is true, and evaluated by a NOT logical operator, it must be false.";
 	}
 
 	
 	if ($andSign == "-select-" || $andSign2 == "-select-") {
-		$andSignLabel = "one or both variables are undefined";
+		if ($andSign == "-select-") {
+			$andSignLabel = "The first variable is undefined.";
+		}
+		else {
+			$andSignLabel = "The second variable is undefined.";
+		}
 	}
 	else if ($andSign && $andSign2) {
-		$andSignLabel = "both variables are true, so it is true";
+		$andSignLabel = "Both variables are true, so it is true.";
 	}
 	else {
-		$andSignLabel = "either one variable, or both variables, are not true, so it is false";
+		$andSignLabel = "Either one variable, or both variables, are not true, so it is false.";
 	}
 
 	if ($and == "-select-" || $and2 == "-select-") {
-		$andLabel = "one or both variables are undefined";
+		if ($and == "-select-") {
+			$andLabel = "The first variable is undefined.";
+		}
+		else {
+			$andLabel = "The second variable is undefined.";
+		}
 	}
 	else if ($and AND $and2) {
-		$andLabel = "both variables are true, so it is true";
+		$andLabel = "Both variables are true, so it is true.";
 	}
 	else {
-		$andLabel = "either one variable, or both variables, are true, so it is false";
+		$andLabel = "Either one variable, or both variables, are true, so it is false.";
 	}
 
 	
 	if ($orSign == "-select-" || $orSign2 == "-select-") {
-		$orSignLabel = "one or both variables are undefined";
+		if ($orSign == "-select-") {
+			$orSignLabel = "The first variable is undefined.";
+		}
+		else {
+			$orSignLabel = "The second variable is undefined.";
+		}
 	}
 	else if ($orSign || $orSign2) {
-		$orSignLabel = "one or both variables are true, so it is true";
+		$orSignLabel = "One or both variables are true, so it is true.";
 	}
 	else {
-		$orSignLabel = "neither variable is true, so it is false";
+		$orSignLabel = "Neither variable is true, so it is false.";
 	}
 
 
 	if ($or == "-select-" || $or == "-select-") {
-		$orLabel = "one or both variables are undefined";
+		if ($or == "-select-") {
+			$orLabel = "The first variable is undefined.";
+		}
+		else {
+			$orLabel = "The second variable is undefined.";
+		}
 	}
 	else if ($or OR $or2) {
-		$orLabel = "one or both variables are true, so it is true";
+		$orLabel = "One or both variables are true, so it is true.";
 	}
 	else {
-		$orLabel = "neither variable is true, so it is false";
+		$orLabel = "Neither variable is true, so it is false.";
 	}
 
 	if ($xor == "-select-" || $xor2 == "-select-") {
-		$xorLabel = "one or both variables are undefined";
+		if ($xor == "-select-") {
+			$xorLabel = "The first variable is undefined.";
+		}
+		else {
+			$xorLabel = "The second variable is undefined.";
+		}
 	}
 	else if ($xor XOR $xor2) {
-		$xorLabel = "the first variable is true, and the second variable is false, so it is true";
+		$xorLabel = "The first variable is true, and the second variable is false, so it is true.";
 	}
 	else {
-		$xorLabel = "the first variable is false, the second variable is true, or both are true, so it is false";
+		$xorLabel = "The first variable is false, the second variable is true, or both are true, so it is false.";
 	}
 
 
@@ -208,7 +270,9 @@ if (isset ($_POST['submitAll']))	{
 <div id="content">
 <h2>Comparative and Logical Operators</h2>
 	<form action="conditions.php" method="post">
-		<div class="container-fluid">
+		<div class="container-fluid" id="conditionsFormContainer">
+		<h3>Conditionals</h3>
+		<hr>
 			<div class="row">
 				<div class="col-md-12">
 				<label for="equalTo">is equal to conditional: 
@@ -228,7 +292,7 @@ if (isset ($_POST['submitAll']))	{
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<label for="equalTo"> <?php if (isset($equalToLabel)) { echo $equalToLabel; } ?></label>
+					<p><label for="equalTo"> <?php if (isset($equalToLabel)) { echo $equalToLabel; } ?></label></p>
 				</div>
 			</div>
 
@@ -252,73 +316,108 @@ if (isset ($_POST['submitAll']))	{
 			</div>
 			<div class="row">
 				<div class="col-md-12">
-					<label for="notEqual"> <?php if (isset($notEqualToLabel)) { echo $notEqualToLabel; } ?></label>
+					<p><label for="notEqual"> <?php if (isset($notEqualToLabel)) { echo $notEqualToLabel; } ?></label></p>
+				</div>
+			</div>
+			
+			
+			<div class="row">
+				<div class="col-md-12">
+				<label for="lessThan">less than conditional: 
+				</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<input type="text" name="lessThan" class="form-control" value="<?php if (isset($lessThan)) { echo $lessThan; } ?>"/> 
+				</div>
+				<div class="col-md-2 text-center">
+					<			
+				</div>
+				<div class="col-md-6">
+					<input type="text" name="lessThan2" class="form-control" value="<?php if (isset($lessThan2)) { echo $lessThan2; } ?>"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p><label for="lessThan"> <?php if (isset($lessThanLabel)) { echo $lessThanLabel; } ?></label></p>
 				</div>
 			</div>
 
-			 
-			<br>
-			<br>
+			
+			<div class="row">
+				<div class="col-md-12">
+				<label for="greaterThan">greater than conditional: 
+				</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<input type="text" name="greaterThan" class="form-control" value="<?php if (isset($greaterThan)) { echo $greaterThan; } ?>"/> 
+				</div>
+				<div class="col-md-2 text-center">
+					>			
+				</div>
+				<div class="col-md-6">
+					<input type="text" name="greaterThan2" class="form-control" value="<?php if (isset($greaterThan2)) { echo $greaterThan2; } ?>"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p><label for="greaterThan"> <?php if (isset($greaterThanLabel)) { echo $greaterThanLabel; } ?></label></p>
+				</div>
+			</div>
 			
 			
-			less than conditional: 
-			<br>
-			<input type="text" name="lessThan" value = "<?php if (isset($lessThan)) { echo $lessThan; } ?>"/> <br>
-			< 
-			<br>
-			<input type="text" name="lessThan2" value = "<?php if (isset($lessThan2)) { echo $lessThan2; } ?>"/>
-			<br>
-			<label for="lessThan" /> <?php if (isset($lessThanLabel)) { echo $lessThanLabel; } ?></label>
+			<div class="row">
+				<div class="col-md-12">
+				<label for="greaterThanOrEqualTo">greater than or equal to conditional: 
+				</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<input type="text" name="greaterThanOrEqualTo" class="form-control" value="<?php if (isset($greaterThanOrEqualTo)) { echo $greaterThanOrEqualTo; } ?>"/> 
+				</div>
+				<div class="col-md-2 text-center">
+					>			
+				</div>
+				<div class="col-md-6">
+					<input type="text" name="greaterThanOrEqualTo2" class="form-control" value="<?php if (isset($greaterThanOrEqualTo2)) { echo $greaterThanOrEqualTo2; } ?>"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p><label for="greaterThanOrEqualTo"> <?php if (isset($greaterThanOrEqualToLabel)) { echo $greaterThanOrEqualToLabel; } ?></label></p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12">
+				<label for="lessThanOrEqualTo">less than or equal to conditional: 
+				</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<input type="text" name="lessThanOrEqualTo" class="form-control" value="<?php if (isset($lessThanOrEqualTo)) { echo $lessThanOrEqualTo; } ?>"/> 
+				</div>
+				<div class="col-md-2 text-center">
+					<			
+				</div>
+				<div class="col-md-6">
+					<input type="text" name="lessThanOrEqualTo2" class="form-control" value="<?php if (isset($lessThanOrEqualTo2lessThanOrEqualTo2)) { echo $lessThanOrEqualTo2lessThanOrEqualTo2; } ?>"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<p><label for="lessThanOrEqualTo"> <?php if (isset($lessThanOrEqualToLabel)) { echo $lessThanOrEqualToLabel; } ?></label></p>
+				</div>
+			</div>
+			
 
-
-			<br>
-			<br>
-			
-			
-			greater than conditional: 
-			<br>
-			<input type="text" name="greaterThan" value = "<?php if (isset($greaterThan)) { echo $greaterThan; } ?>"/> 
-			<br>
-			>
-			<br>
-			<input type="text" name="greaterThan2" value = "<?php if (isset($greaterThan2)) { echo $greaterThan2; } ?>"/>
-			<br>
-			<label for="greaterThan" /> <?php if (isset($greaterThanLabel)) { echo $greaterThanLabel; } ?></label>
-
-			
-			<br>
-			<br>
-			
-			
-			greater than or equal to conditional:
-			<br>
-			<input type="text" name="greaterThanOrEqualTo" value = "<?php if (isset($greaterThanOrEqualTo)) { echo $greaterThanOrEqualTo; } ?>"/> 
-			<br>
-			>=
-			<br>
-			<input type="text" name="greaterThanOrEqualTo2" value = "<?php if (isset($greaterThanOrEqualTo2)) { echo $greaterThanOrEqualTo2; } ?>"/>
-			<br>
-			<label for="greaterThanOrEqualTo" /> <?php if (isset($greaterThanOrEqualToLabel)) { echo $greaterThanOrEqualToLabel; } ?></label>
-
-			
-			<br>
-			<br>
-			
-			
-			less than or equal to conditional: 
-			<br>
-			<input type="text" name="lessThanOrEqualTo" value = "<?php if (isset($lessThanOrEqualTo)) { echo $lessThanOrEqualTo; } ?>"/> <br>
-			<=
-			<br>
-			<input type="text" name="lessThanOrEqualTo2" value = "<?php if (isset($lessThanOrEqualTo2)) { echo $lessThanOrEqualTo2; } ?>"/>
-			<br>
-			<label for="lessThanOrEqualTo" /> <?php if (isset($lessThanOrEqualToLabel)) { echo $lessThanOrEqualToLabel; } ?></label>
-			
-
-			<br>
-			<br>
-			
-			
+			<h3>logical operators</h3>
+			<hr>			
 			not logical operator: 
 			<br>
 			<select name="notSign" class="form-control">
@@ -330,7 +429,6 @@ if (isset ($_POST['submitAll']))	{
 			! 
 			<br>
 			<label for="notSign" /> <?php if (isset($notSignLabel)) { echo $notSignLabel; } ?></label>
-			<?php echo $notSign; ?>
 
 			<br>
 			<br>
