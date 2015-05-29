@@ -11,7 +11,7 @@
 
 
 <meta charset="utf-8">
-<title>Countdown</title>
+<title>Car Catalog</title>
 </head>
 
 <body>
@@ -41,8 +41,7 @@
 <div id="content">
 
 <p id="details"></p>
-<p id="mph"></p>
-
+<p id="errors"></p>
 </div>
 <div id="footer">
 Copyright© 2015 Thomas Garcia
@@ -50,26 +49,51 @@ Copyright© 2015 Thomas Garcia
 </div>
 </body>
 <script>
-	
-	
-	
-	var car = {
-	    color:"Black", model:"Bugatti", wheel:"Exotic", id:"5165", 
+	var exoticCar = {
+	    color:"Black", 
+	    model:"Bugatti", 
+	    wheel:"Exotic", 
+	    id:"1", 
 	    speed: "245 mph",
-		productDetails: function(c) {
-		    return "Color: " + this.color + "<br> Model: " + this.model
-		    + "<br> ID: " + this.id;
-		} ,
-		
-		mph: function(c) {
-		    return "Top Speed in mph: " + this.speed;	
-		}
+	    productDetails: function(c) {
+		return "Color: " + this.color + "<br> Model: " + this.model
+		+ "<br> ID: " + this.id;
+	    },
+	    
+	    mph: function(c) {
+		return "Top Speed in mph: " + this.speed;
+	    }
 	};
-
-
-
-
-	document.getElementById("details").innerHTML = car.productDetails();
-	document.getElementById("mph").innerHTML = car.mph();
+	var catalog = [exoticCar];
+	
+	function printCar(car) {
+	    return car.productDetails() + car.mph();
+	}
+	
+	function list() {
+	    for(var i = 0; i < catalog.length; i++) {
+		printCar(catalog[i]);
+		document.getElementById("details").innerHTML = printCar(catalog[i]);
+	    }
+	}
+	
+	function search(model) {
+	    for(var i = 0; i < catalog.length; i++) {
+		if(catalog[i].model == model) {
+		    printCar(catalog[i]);
+		}
+	    }
+	    
+	}
+	function add(color, model, wheel, speed) {
+	    this.color = color;
+	    this.model = model;
+	    this.wheel = wheel;
+	    this.speed = speed;
+	    
+	}
+	
+	
+	list();
 </script>
 </html>
